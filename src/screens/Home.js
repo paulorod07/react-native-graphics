@@ -2,6 +2,7 @@ import React from 'react';
 import { SafeAreaView, StatusBar } from 'react-native';
 import { Container, Row, Box, Picker, Label } from '../components/HighChart';
 import { colors } from '../styles/colors';
+import { VerticalBarChart } from '../components/charts/bars';
 
 export const Home = () => {
   return (
@@ -56,7 +57,9 @@ export const Home = () => {
               </Label>
               <Label>Last 7 days</Label>
             </Row>
-            <Row fluid>{/*<VerticalBarChart />*/}</Row>
+            <Row fluid>
+              <VerticalBarChart />
+            </Row>
           </Box>
         </Row>
       </SafeAreaView>
